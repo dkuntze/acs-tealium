@@ -4,9 +4,9 @@ This a content package project generated using the AEM Multimodule Lazybones tem
 
 ## Integration
 
-The suggested integration location from Tealium is to inject the code at the top of the <body> tag:
+The suggested integration location from Tealium is to inject the code at the top of the `<body>` tag:
 
-<cq:include path="tealium" resourceType="acs-tealium/components/utilities/tealium"/>
+`<cq:include path="tealium" resourceType="acs-tealium/components/utilities/tealium"/>`
 
 ## Building
 
