@@ -2,6 +2,12 @@
 
 This a content package project generated using the AEM Multimodule Lazybones template.
 
+## Integration
+
+The suggested integration location from Tealium is to inject the code at the top of the <body> tag:
+
+<cq:include path="tealium" resourceType="acs-tealium/components/utilities/tealium"/>
+
 ## Building
 
 This project uses Maven for building. Common commands:
