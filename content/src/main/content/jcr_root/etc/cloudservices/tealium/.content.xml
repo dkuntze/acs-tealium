@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:template="/libs/cq/cloudserviceconfigs/templates/servicepage"
+            jcr:description="Enterprise Tag Management"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Tealium"
+            sling:resourceType="cq/cloudserviceconfigs/components/servicepage"
+            componentReference="acs-tealium/components/utilities/tealium"
+            description="Focus on customer experiences. We'll take care of the code."
+            inclusionRank="{Long}300"
+            ranking="100"
+            serviceAdminUrl="https://my.tealiumiq.com"
+            serviceUrl="http://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html"
+            thumbnailPath="/apps/acs-tealium/templates/utilities/tealium/thumbnail.png"/>
+</jcr:root>

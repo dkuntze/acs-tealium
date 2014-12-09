@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general
+                jcr:primaryType="nt:unstructured"
+                title="Dynamic Tag Management Settings"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <account
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Account Name"
+                        name="./accountName"
+                        xtype="textfield">
+                    <listeners
+                            jcr:primaryType="nt:unstructured"
+                            change="function(comp) {CQ.cloudservices.getEditOk().enable();}" />
+                </account>
+                <profile
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="true"
+                        fieldLabel="Profile"
+                        name="./profile"
+                        xtype="textfield" />
+                <environment
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Environment"
+                        name="./environment"
+                        type="select"
+                        xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <development
+                            jcr:primaryType="nt:unstructured"
+                            text="Development"
+                            value="dev"/>
+                        <qa
+                            jcr:primaryType="nt:unstructured"
+                            text="QA"
+                            value="qa"/>
+                        <production
+                            jcr:primaryType="nt:unstructured"
+                            text="Production"
+                            value="prod"/>
+                    </options>
+                </environment>
+                <synchronous
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Synchronous?"
+                        inputValue="true"
+                        name="./synchronous"
+                        type="checkbox"
+                        xtype="selection" />
+            </items>
+        </general>
+    </items>
+</jcr:root>
